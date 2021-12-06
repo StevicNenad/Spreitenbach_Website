@@ -1,5 +1,9 @@
 var slideIndex = 0;
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
 carousel();
+window.onscroll = function() {stick_navbar()};
 
 function carousel() {
   var i;
@@ -10,5 +14,13 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 5000);
 }
+
+function stick_navbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 

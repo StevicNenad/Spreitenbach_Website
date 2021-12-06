@@ -5,23 +5,38 @@ body {
 h1 {
     font-size: 1000%;
     color: #222222;
-    resize: both;
 }
 
 .mySlides {
     width: 100%;
-    height: 93vh;
-    filter:opacity(65%);
+    height: 100vh;
+    filter: opacity(40%);
     object-fit: cover;
     display: none;
 }
+
+.anim {
+    position: relative;
+    animation: animateleft 3s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 99.05%;
+    z-index: 12000;
+}
+
+.sticky + #header {
+    padding-top: 50px   ;
+  }
 
 #red_dot {
     color: #b12b28;
 }
 
 #navbar {
-    background-color: grey;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -48,14 +63,21 @@ h1 {
 }
 
 #dropdown {
+    padding-right: 20px;
     position: relative;
     display: inline-block;
 }
 
+#dropdown img{
+    margin: -3px;
+    display: inline;
+    position: absolute;
+}
+
 #dropdown_btn {
+    font-weight: 100;
+    font-size: 22px;
     background-color: inherit;
-    height: 35px;
-    font-size: 16px;
     border: none;
 }
 
@@ -80,25 +102,35 @@ h1 {
 }
 
 #header {
+    overflow: hidden;
     position: relative;
-    height: 93vh;
-    resize: both;
+    height: 100vh;
 }
 
 #title{
     z-index: 10000;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    resize: both;
+}
+
+#nav_title_div {
+    margin: auto;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 #title p {
     font-size: 140%;
-    color: #e5e5e5;
+    color: #222222;
     text-align: center;
     margin-top: -13%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@keyframes animateleft {
+    from {transform: scale(1.2); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
