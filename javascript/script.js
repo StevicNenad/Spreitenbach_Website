@@ -1,3 +1,6 @@
+/*
+**Slideshow script
+*/
 var slideIndex = 0;
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -23,4 +26,5 @@ function stick_navbar() {
   } else {
     navbar.classList.remove("sticky");
   }
-} 
+}
+
