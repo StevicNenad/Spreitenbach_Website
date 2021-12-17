@@ -2,11 +2,8 @@
 **Slideshow script
 */
 var slideIndex = 0;
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
 
 carousel();
-window.onscroll = function() {stick_navbar()};
 
 function carousel() {
   var i;
@@ -20,6 +17,14 @@ function carousel() {
   setTimeout(carousel, 5000);
 }
 
+/*
+**Navbar script
+*/
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+window.onscroll = function() {stick_navbar()};
+
 function stick_navbar() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
@@ -28,3 +33,36 @@ function stick_navbar() {
   }
 }
 
+/*
+**Scroll animation script
+*/
+
+test();
+
+function test() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.js_scroll');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= -120) {
+        element.classList.add('scrolled');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+};
