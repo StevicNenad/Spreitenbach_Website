@@ -2,6 +2,8 @@
 /*///////////////*/
 body {
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -15,6 +17,7 @@ h2 {
 
 h3 {
     font-size: 150%;
+    padding: 0 0 40px 0;
 }
 
 a {
@@ -27,7 +30,7 @@ a {
 .sticky {
     position: fixed;
     top: 0;
-    width: 99.05%;
+    width: 100%;
     z-index: 12000;
 }
 
@@ -40,6 +43,11 @@ a {
     display: flex;
     justify-content: space-evenly;
     height: 50px;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 12000;
 }
 
  /* NAVBAR PICTURE */
@@ -47,7 +55,7 @@ a {
 #pic_div{
     text-align: center;
     z-index: 10000;
-    width: 15%;
+    width: 25%;
     min-width: 100px;
 }
 
@@ -55,7 +63,7 @@ a {
 /*//////////////*/
 #nav_title_div {
     text-align: center;
-    width: 70%;
+    width: 50%;
     margin: auto;
     font-size: 22px;
     font-weight: 300;
@@ -69,9 +77,9 @@ a {
 /*/////////////////*/
 #dp_menu_div {
     position: relative;
-    width: 15%;
+    width: 25%;
     min-width: 100px;
-    text-align: center;
+    justify-content: center;
     z-index: 10000;
 }
 
@@ -82,8 +90,8 @@ a {
 #dropdown {
     position: absolute;
     top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0 10px 0 0;
 }
 
@@ -94,6 +102,7 @@ a {
 }
 
 #dropdown_btn {
+    margin: auto;
     font-weight: 100;
     font-size: 22px;
     background-color: inherit;
@@ -135,6 +144,7 @@ a {
     overflow: hidden;
     position: relative;
     height: 100vh;
+    z-index: 1000;
 }
 
 #title{
@@ -174,40 +184,73 @@ a {
  /* CONTENT */
 /*/////////*/ 
 #content {
-    margin: 0 15% 0 15%;
+    position: relative;
+    margin: 0 10% 0 10%;
+    box-shadow: 1px 0 15px -4px #dddddd, -1px 0 15px -4px #dddddd; 
 }
 
  /* WEBSITE DESCRIPTION */
 /*/////////////////////*/
 #intro {
-    padding: 50px 0 50px 0;
+    padding: 50px 30px 10px 30px;
     text-align: center;
-    margin: 0 0 50px 0;
     border: lightgray;
-    border-width: 0 0 1px 0;
-    border-style: solid;
 }
 
 #intro p {
-    margin-bottom: 75px;
+    margin: 0 100px 75px 100px;
+}
+
+#border_hack {
+    position: relative;
+    display: flex;
+}
+
+.border_div_whitespace {
+    width: 25%;
+}
+
+#border_div {
+    width: 50%;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #b12b28; 
+}
+
+.js_scroll {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.js_scroll3.scrolled {
+    opacity: 1;
+    animation: expand 1s;
 }
 
  /* UPCOMING EVENTS SECTION */
 /*/////////////////////////*/
+#events_quicklinks_div {
+    position: relative;
+    padding: 55px 0 0 0;
+    display: flex;
+}
 #events {
+    padding: 0 0 0 50px;
     float: left;
     width: 65%;
     padding-right: 5%;
+    overflow: hidden;
 }
 
 .event_box {
     text-align: justify;
     height: 125px;
     overflow: hidden;
-    margin: 20px 0 35px 0;
+    padding: 15px 0 15px 0;
     border: #dddddd;
     border-width: 0 0 1px 0;
     border-style: solid;
+    background-color: white;
 }
 
 .event_box h4{
@@ -231,7 +274,7 @@ a {
     font-size: 12px;
 }
 
-.js_scroll {
+.js_scroll3 {
     opacity: 0;
     transition: opacity 1000ms;
 }
@@ -244,8 +287,67 @@ a {
  /* QUICKLINKS */
 /*////////////*/
 #quicklinks {
+    overflow: hidden;
     width: 30%;
     float: left;
+    background-color: white;
+    text-align: right;
+}
+
+#quicklinks h3 {
+    padding: 0 50px 40px 0;
+}
+
+.link_box {
+    object-fit: cover;
+    overflow: hidden;
+    height: 150px;
+    margin: 7px 0 7px 0;
+}
+
+.link_box img {
+    transform: translateY(-20px);
+    filter: grayscale(100%) brightness(1.3);
+    transition: 500ms;
+}
+
+.link_box:hover img {
+    filter: none;
+    transform: scale(1.2) translateY(-10px);
+    transition: 500ms;
+}
+
+.js_scroll2 {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+.js_scroll2.scrolled{
+    animation: slide-in-right 1s;
+    opacity: 1;
+}
+
+ /* VIDEO */
+/*///////*/
+
+#video_embed {
+    min-width: 50%;
+}
+
+#vid {
+    transform-origin: top;
+    top: 0%;
+    position:static;
+}
+
+.js_scroll4 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.js_scroll4.scrolled {
+    animation: slide-in-top 1s;
+    opacity: 1;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -264,4 +366,26 @@ a {
       transform: translateX(0);
       opacity: 1;
     }
-  }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0.90);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

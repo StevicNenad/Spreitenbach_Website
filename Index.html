@@ -21,7 +21,7 @@
             </div>
             <div id="dp_menu_div">
                 <div id="dropdown">
-                    <button id="dropdown_btn">MENU
+                    <button id="dropdown_btn"><label id="menu_writing">MENU</label>
                         <img src="images/hamburger-icon-svg-29.png" height="35px" width="35px">
                     </button>
                     <div id="dropdown_content">
@@ -42,13 +42,12 @@
                 <img class="mySlides anim" src="images/bg_slideshow/umweltarena_promomaterial_aussenaussicht.jpg">
                 <img class="mySlides anim" src="images/bg_slideshow/pathe_kino_logo.jpg">
                 <img class="mySlides anim" src="images/bg_slideshow/shoppi_innen_mall.jpg">
-                <img class="mySlides anim" src="images/bg_slideshow/kartbahn_aussen.jpg">
                 <img class="mySlides anim" src="images/bg_slideshow/spreitenbach-luftbild-gewerbegebiet.jpg">
                 <img class="mySlides anim" src="images/bg_slideshow/ikea.jpg">
             </div>
         </div>
         <div id="content">
-            <div id="intro">
+            <div class="js_scroll3" id="intro">
                 <h2>Willkommen auf Spreitenbach<label class="red_dot">.</label>ch</h2>
                 <p>
                     Auf dieser Webseite können Sie die Gemeinde Spreitenbach ein bisschen näher kennenlernen. Sie finden aktuelle Events, Sehenswürdigkeiten, Impressionen
@@ -56,10 +55,15 @@
                     schon auf Ihren besuch!
                 </p>
             </div>
+            <div class="js_scroll3" id="border_hack">
+                <div class="border_div_whitespace"></div>
+                <div id="border_div"></div>
+                <div class="border_div_whitespace"></div>
+            </div>
 
             <div id="events_quicklinks_div">
-                <article id="events">
-                    <h3>Aktuelle Events</h3>
+                <div id="events">
+                    <h3 class="js_scroll">Aktuelle Events</h3>
 
                     <article class="event_box js_scroll">
                         <img src="https://www.spreitenbach.ch/fileadmin/_processed_/c/c/csm_Kunst_und_Kultur_7a1ad970f0.png" height="100px" width="150px">
@@ -99,12 +103,36 @@
                         <img src="https://www.spreitenbach.ch/fileadmin/_processed_/0/d/csm_WahlAbstimmung1_774a405386.jpg" height="100px" width="150px">
                         <h4>Eidg./​Kant. Ab­stim­mun­gen und Wah­len</h4><label class="event_date">13. Februar 2022</label>
                     </article>
+
                 </div>
 
-                <div id="quicklinks">
-                    <h3>Quicklinks</h3>
-                </div>
+                    <div id="quicklinks">
+                        <h3 class="js_scroll2">Quicklinks</h3>
+
+                        <div class="link_box js_scroll2">
+                            <img src="images/impressionen/shoppi_aussen_sued.jpg" width="400px">
+                        </div>
+
+                        <div class="link_box js_scroll2">
+                            <img src="images/impressionen/umweltarena_eingang.jpg" width="400px">
+                        </div>
+
+                        <div class="link_box js_scroll2">
+                            <img src="images/impressionen/kartbahn_aussen.jpg" width="400px">
+                        </div>
+
+                        <div class="link_box js_scroll2">
+                            <img src="images/impressionen/pathe_kino_eingang.jpg" width="400px">
+                        </div>
+
+                        <div class="link_box js_scroll2">
+                            <img src="images/impressionen/fc_spreitenbach_beiz.jpg" width="400px">
+                        </div>
+                    </div>
             </div>
+        </div>
+        <div id="video_embed">
+            <video id="vid" onclick="unmuteVideo()" muted src="video/Spreiti_final_2160p.mp4" type="video/mp4" width="100%" height="100%">
         </div>
     </div>
 </body>
