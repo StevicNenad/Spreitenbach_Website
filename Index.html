@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/style_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/style_phone.css">
     <meta name="description" content="Auf dieser Seite wird die Gemiende Spreitenbach präsentiert">
     <title>Spreitenbach</title>
 </head>
 <body>
-    <div id="main">
-        <div id="navbar">
-            <div id="pic_div">
-                <a href="Index.html">
-                    <img src="images/Logo.png" height="96px" width="68px">
-                </a>
-            </div>
-            <div id="nav_title_div">
-                <a href="index.html">SPREITENBACH</a>
-            </div>
-            <div id="dp_menu_div">
-                <div id="dropdown">
-                    <button id="dropdown_btn"><label id="menu_writing">MENU</label>
-                        <img src="images/hamburger-icon-svg-29.png" height="35px" width="35px">
-                    </button>
-                    <div id="dropdown_content">
-                        <a href="#meerkat">Meerkat</a>
-                        <a href="#beercat">Beercat</a>
-                        <a href="#sneermat">Sneermat</a>
-                        <a href="#seerrat">Seerrat</a>
+    <main>
+
+        <section id="page_header">
+            <div id="navbar">
+                <div id="pic_div">
+                    <a href="Index.html">
+                        <img id="lion_red" src="images/icons/Logo_red.png" height="96px" width="68px">
+                        <img id="lion_black" src="images/icons/Logo.png" height="96px" width="68px">
+                    </a>
+                </div>
+                <div id="nav_title_div">
+                    <a href="index.html">SPREITENBACH</a>
+                </div>
+                <div id="dp_menu_div">
+                    <div id="dropdown">
+                        <button id="dropdown_btn">
+                            <div id="menu_writing_div">
+                                <label id="menu_writing">MENU</label>
+                            </div>
+                            <div id="burger_div">
+                                <img id="burger_red" src="images/icons/hamburger_red.png" height="35px" width="35px">
+                                <img id="burger_black" src="images/icons/hamburger_black.png" height="35px" width="35px">
+                            </div>
+                        </button>
+                        <div id="dropdown_content">
+                            <a href="index.html">Start</a>
+                            <a href="gallery.html">Gallerie</a>
+                            <a href="impressum.html">Impressum</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <div id="header">
             <div id="title">
                 <h1>Spreitenbach<label class="red_dot">.</label></h1>
@@ -46,7 +58,9 @@
                 <img class="mySlides anim" src="images/bg_slideshow/ikea.jpg">
             </div>
         </div>
+        
         <div id="content">
+
             <div class="js_scroll3" id="intro">
                 <h2>Willkommen auf Spreitenbach<label class="red_dot">.</label>ch</h2>
                 <p>
@@ -55,53 +69,93 @@
                     schon auf Ihren besuch!
                 </p>
             </div>
-            <div class="js_scroll3" id="border_hack">
+
+            <div id="border_hack">
                 <div class="border_div_whitespace"></div>
-                <div id="border_div"></div>
+                <div class="js_scroll3" id="border_div"></div>
                 <div class="border_div_whitespace"></div>
             </div>
 
-            <div id="events_quicklinks_div">
-                <div id="events">
-                    <h3 class="js_scroll">Aktuelle Events</h3>
+            <div id="news_quicklinks_div">
 
-                    <article class="event_box js_scroll">
-                        <img src="https://www.spreitenbach.ch/fileadmin/_processed_/c/c/csm_Kunst_und_Kultur_7a1ad970f0.png" height="100px" width="150px">
-                        <h4>Buch­start mit Si­byl­le Mül­ler</h4><label class="event_date">11. Dezember 2021 </label>
+                <div id="news">
+                    <h3 class="js_scroll">Aktuelle Nachrichten</h3>
+
+                    <article class="news_box js_scroll">
+                        <img src="https://img.chmedia.ch/2021/12/30/7cb240c2-aae9-4129-aea2-ac8c37efe691.jpeg" height="110px" width="150px">
+
+                        <a href="https://www.aargauerzeitung.ch/aargau/gemeinden/so-viele-abstimmungen-hat-spreitenbach-in-diesem-jahr-gewonnen-ld.2232784">
+                            <h4>So viele Abstimmungen hat Spreitenbach in diesem Jahr gewonnen</h4>
+                        </a>
+                        <label class="news_date">30. Dezember 2021, 01:20 Uhr</label>
+
                         <p>
-                            Es ist wieder Verslispielzeit. Eltern, Grosseltern oder andere Bezugspersonen und ihre Kinder zwischen 0 und 36 Monaten 
-                            sind herzlich eingeladen.
+                            War 2021 für die Gemeinde Spreitenbach aus direktdemokratischer Sicht ein erfolgreiches Jahr?
                         </p>
+
                     </article>
 
-                    <article class="event_box js_scroll">
-                        <img src="https://www.spreitenbach.ch/fileadmin/_processed_/c/c/csm_Kunst_und_Kultur_7a1ad970f0.png" height="100px" width="150px">
-                        <h4>Ge­schich­ten­stun­de</h4><label class="event_date">14. Dezember 2021 </label>
+                    <article class="news_box js_scroll">
+                        <img src="https://img.chmedia.ch/2021/12/14/a8389c26-8957-4682-9cac-644087eaab46.jpeg" height="110px" width="150px">
+
+                        <a href="https://www.aargauerzeitung.ch/aargau/baden/vorfaelle-beim-jugendtreff-spreitenbach-hat-genug-sicherheitsdienst-soll-neu-fuer-ruhe-und-ordnung-sorgen-ld.2227718">
+                            <h4>Spreitenbach hat genug: Sicherheitsdienst soll neu für Ruhe und Ordnung sorgen</h4>
+                        </a>
+                        <label class="news_date">15. Dezember 2021, 16:14 Uhr</label>
+
                         <p>
-                            Ob als Bilderbuch oder als Kamishibai, ob fantastisch, lustig oder spannend: Wir freuen uns, euch mit unseren Geschichten zu verzaubern.
+                            Weil das Nachbardorf Würenlos gute Erfahrungen damit gemacht hat, setzt nun auch Spreitenbach auf einen externen Sicherheitsdienst. 
+                            Das Fass zum Überlaufen brachten Vorfälle beim Jugendtreff Peli.                        
                         </p>
+
                     </article>
 
-                    <article class="event_box js_scroll">
-                        <img src="https://www.spreitenbach.ch/fileadmin/00_website/Kategoriebilder_Veranstaltungen/180705_icon_veranstaltungen_weitere.jpg" height="100px" width="150px">
-                        <h4>Span­nen­des Fa­mi­li­en­pro­gramm "Fa­mi­ly Days" in der Um­welt Are­na </h4><label class="event_date">15. Dezember 2021 - 09. Januar 2022</label>
+                    <article class="news_box js_scroll">
+                        <img src="https://img.chmedia.ch/2021/12/07/e8b575e9-0244-4385-b105-70d5cece3962.jpeg?width=1360&height=1462&fit=crop&quality=75&auto=webp" height="110px" width="150px">
+                        
+                        <a href="https://www.aargauerzeitung.ch/aargau/baden/spreitenbach-tivoli-garten-mit-445-neuen-wohnungen-und-limmattalbahn-hier-treffen-zwei-grossbauprojekte-aufeinander-ld.2225297">
+                            <h4>«Tivoli Garten» mit 445 neuen Wohnungen und Limmattalbahn: Hier treffen zwei Grossbauprojekte aufeinander</h4>
+                        </a>
+                        
+                        <label class="news_date">08. Dezember 2021, 05:00 Uhr</label>
+
                         <p>
-                            Zwischen dem 15. Dezember 2021 und 9. Januar 2022 finden in der Umwelt Arena Schweiz, dem Ausflugsziel für Nachhaltigkeit in Spreitenbach, 
-                            die Family Days statt; dies gilt auch über die Feiertage.
+                            Im «Tivoli Garten» in Spreitenbach entstehen 445 Wohnungen – und aktuell auch eine Haltestelle der Limmattalbahn. 
+                            Während Letztere im nächsten Jahr einsatzbereit ist, ...
                         </p>
+
                     </article>
 
-                    <article class="event_box js_scroll">
-                        <img src="https://www.spreitenbach.ch/fileadmin/00_website/Kategoriebilder_Veranstaltungen/180705_icon_veranstaltungen_weitere.jpg" height="100px" width="150px">
-                        <h4>Müt­ter- und Vä­ter­be­ra­tung</h4><label class="event_date">04. Januar 2022</label>
+                    <article class="news_box js_scroll">
+                        <img src="https://img.chmedia.ch/2021/11/30/fe0be265-78ce-4038-ab05-4d3528ca7658.jpeg?width=1360&height=906&fit=crop&quality=75&auto=webp" height="110px" width="150px">
+
+                        <a href="https://www.aargauerzeitung.ch/aargau/baden/repol-wettingen-limmattal-nicht-viel-los-spreitenbacher-polizeiposten-auf-der-kippe-ld.2221992">
+                            <h4>«Nicht viel los»: Spreitenbacher Polizeiposten steht auf der Kippe</h4>
+                        </a>
+                        
+                        <label class="news_date">01. Dezember 2021, 05:00 Uhr</label>
+                        
                         <p>
-                            Termine ausschliesslich mit Voranmeldung. Anmeldung über die Webseite der Mütter- und Väterberatung des Bezirks Baden.
+                            Ab Dezember ist der Posten der Regionalpolizei Wettingen-Limmattal im Spreitenbacher Gemeindehaus nicht mehr besetzt – 
+                            weil er laut Polizeichef Roland Jenni zu wenig frequentiert wurde. Bis im Juni 2022 entscheidet die Gemeinde, ob er überhaupt ...
                         </p>
+
                     </article>
 
-                    <article class="event_box js_scroll">
-                        <img src="https://www.spreitenbach.ch/fileadmin/_processed_/0/d/csm_WahlAbstimmung1_774a405386.jpg" height="100px" width="150px">
-                        <h4>Eidg./​Kant. Ab­stim­mun­gen und Wah­len</h4><label class="event_date">13. Februar 2022</label>
+                    <article class="news_box js_scroll">
+                        <img src="https://img.chmedia.ch/2021/11/23/37ee9a72-9993-4a0c-b6ea-728b797e8e40.jpeg?width=1360&height=1022&fit=crop&quality=75&auto=webp" height="100px" width="150px">
+
+                        <a href="https://www.aargauerzeitung.ch/aargau/baden/wintergmeind-spreitenbach-stimmt-tieferem-steuerfuss-zu-die-gute-finanzielle-lage-der-gemeinde-weckt-begehrlichkeiten-ld.2218544">
+                            <h4>Spreitenbach stimmt tieferem Steuerfuss zu - die gute finanzielle Lage der Gemeinde weckt Begehrlichkeiten</h4>
+                        </a>
+                        
+                        <label class="news_date">24. November 2021, 00:03 Uhr</label>
+
+                        <p>
+                            Die Gemeindeversammlung im 12'000-Einwohnerdorf war mit 13 Traktanden vollgepackt. Die FDP rief die Bevölkerung dazu auf, 
+                            sich mit speziellen ...
+                        </p>
+
                     </article>
 
                 </div>
@@ -110,31 +164,66 @@
                         <h3 class="js_scroll2">Quicklinks</h3>
 
                         <div class="link_box js_scroll2">
-                            <img src="images/impressionen/shoppi_aussen_sued.jpg" width="400px">
+                            <a href="https://www.shoppitivoli.ch/">
+                                <img src="images/impressionen/shoppi_aussen_sued.jpg" width="400px">
+                            </a>
                         </div>
 
                         <div class="link_box js_scroll2">
-                            <img src="images/impressionen/umweltarena_eingang.jpg" width="400px">
+                            <a href="https://www.umweltarena.ch/">
+                                <img src="images/impressionen/umweltarena_eingang.jpg" width="400px">
+                            </a>
                         </div>
 
                         <div class="link_box js_scroll2">
-                            <img src="images/impressionen/kartbahn_aussen.jpg" width="400px">
+                            <a href="https://kart.ch/spreitenbach/">
+                                <img src="images/impressionen/kartbahn_aussen.jpg" width="400px">
+                            </a>
                         </div>
 
                         <div class="link_box js_scroll2">
-                            <img src="images/impressionen/pathe_kino_eingang.jpg" width="400px">
+                            <a href="https://www.pathe.ch/de/kinos/cinema-pathe-spreitenbach">
+                                <img src="images/impressionen/pathe_kino_eingang.jpg" width="400px">
+                            </a>
                         </div>
 
                         <div class="link_box js_scroll2">
-                            <img src="images/impressionen/fc_spreitenbach_beiz.jpg" width="400px">
+                            <a href="https://fcspreitenbach.ch/">
+                                <img src="images/impressionen/fc_spreitenbach_match_quicklinks.jpg" width="400px">
+                            </a>
                         </div>
                     </div>
             </div>
+
         </div>
+
         <div id="video_embed">
+            <button id="mute" onclick="unmuteVideo()">
+                <img src="images/icons/mute.png" height="256px" width="256px">
+            </button>
             <video id="vid" onclick="unmuteVideo()" muted src="video/Spreiti_final_2160p.mp4" type="video/mp4" width="100%" height="100%">
         </div>
-    </div>
+
+        <section id="page_footer">
+            <div id="footer_logo">
+                <img src="images/icons/logo_white.png" height="128px" width="90px">
+            </div>
+            <div id="nav_links">
+                <a href="gallery.html">Gallerie</a>
+                <a href="index.html">Home</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <div id="rights">
+                <p>
+                        Nenad Stevic IT2b, Bénédict-Schule Zürich -
+                        <strong>Alle Rechte vorbehalten, 2022.</strong> 
+                </p>
+            </div>
+            <div id="spreitenbach_footer">
+                <h4>Spreitenbach<label class="red_dot">.</label></h4>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="javascript/script.js"></script> 
 </html>
