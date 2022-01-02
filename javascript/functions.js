@@ -160,3 +160,14 @@ export function unmuteVideo() {
         mute.style.display = "block";
     }
 }
+
+
+
+
+export function openHQ(clicked_id) {
+  var image = document.getElementById("show_image"),
+      modal = document.getElementById("full_image");
+  
+  image.src = clicked_id;
+  modal.style.display = "block";
+}

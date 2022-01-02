@@ -4,14 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/gallery_style.css">
     <meta name="description" content="Spreitenbach Bildergallerie">
     <title>Spreitenbach - Gallerie</title>
 </head>
 <body>
     <main>
-        <h1>Under Construction</h1>
-        <p><a href="index.html">Zurück zur Startseite</a></p>
+
+        <section id="page_header">
+            <div id="navbar">
+                <div id="pic_div">
+                    <a href="index.html">
+                        <img id="lion_red" src="images/icons/Logo_red.png" height="96px" width="68px">
+                        <img id="lion_black" src="images/icons/Logo.png" height="96px" width="68px">
+                    </a>
+                </div>
+                <div id="nav_title_div">
+                    <a href="index.html">SPREITENBACH</a>
+                </div>
+                <div id="dp_menu_div">
+                    <div id="dropdown">
+                        <button id="dropdown_btn">
+                            <div id="menu_writing_div">
+                                <label id="menu_writing">MENU</label>
+                            </div>
+                            <div id="burger_div">
+                                <img id="burger_red" src="images/icons/hamburger_red.png" height="35px" width="35px">
+                                <img id="burger_black" src="images/icons/hamburger_black.png" height="35px" width="35px">
+                            </div>
+                        </button>
+                        <div id="dropdown_content">
+                            <a href="index.html">Start</a>
+                            <a href="gallery.html">Gallerie</a>
+                            <a href="impressum.html">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="header">
+            <div id="title">
+                <h1>Bildergallerie</h1>
+            </div>
+            <div id="slideshow">
+                <img class="mySlides anim" src="images/bg_slideshow/pathe_kino_logo.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/spreitenbach-luftbild-gewerbegebiet.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/umweltarena_promomaterial_aussenaussicht.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/shoppi_innen_mall.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/ikea.jpg">
+            </div>
+        </div>
+
+        <div id="filter_bar">
+            <button class="filter_button">Alle</button>
+            <button class="filter_button">Shopping</button>
+            <button class="filter_button">Freizeit</button>
+            <button class="filter_button">Sonstiges</button>
+        </div>
+
+        <div id="gallery_content">
+            <div class="gallery_img" >
+                <a class="gallery_images disabled" href="images/impressionen/burgerkingHQ.JPEG" target="_blank">
+                    <img src="images/impressionen/burgerking.jpg">
+                </a>
+            </div>
+            <div onclick="functions.openHQ('images/impressionen/fc_spreitenbach_beizHQ.jpg')" class="gallery_img" >
+                <img src="images/impressionen/fc_spreitenbach_beiz.jpg">
+            </div>
+            <div onclick="openHQ(images/impressionen/burgerkingHQ.jpg)" class="gallery_img grow" >
+                <img src="images/impressionen/kartbahn_innen.jpg">
+            </div>
+            <div onclick="openHQ(images/impressionen/burgerkingHQ.jpg)" class="gallery_img" >
+                <img src="images/impressionen/fc_spreitenbach_hauptplatz.jpg">
+            </div>
+            <div onclick="openHQ(images/impressionen/burgerkingHQ.jpg)" class="gallery_img" >
+                <img src="images/impressionen/umweltarena_promomaterial_aussenaussicht.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/fc_spreitenbach_match.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/fc_spreitenbach_sportanlage.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/umweltarena_innen.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/ikea.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/kartbahn_aussen.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/kirche_st_kosmas.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/shoppi_innen_first.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/limmatspot.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/spreitenbach-luftbild-gewerbegebiet.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/mcdonalds_spreitenbach.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/pathe_kino_eingang.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/pathe_kino_logo.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/tennisplatz_spreitenbach.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/shoppi_aussen_parkplatzareal.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/shoppi_aussen_sued.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/shoppi_innen_mall.jpg">
+            </div>
+            <div class="gallery_img grow" >
+                <img src="images/impressionen/umweltarena_aussen.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/feuerwehr_spreitenbach.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/umweltarena_eingang.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/shoppi_aussen_nord.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/zingackerweg_park.jpg">
+            </div>
+            <div class="gallery_img" >
+                <img src="images/impressionen/umweltarena_passarelle.jpg">
+            </div>
+        </div>
+
+        <div class="modal" id="full_image">
+            <img class="modal_image" id="show_image">
+            <div id="caption"></div>
+        </div>
+
     </main>
-    
 </body>
+<script type="module" src="javascript/gallery_script.js"></script> 
 </html>

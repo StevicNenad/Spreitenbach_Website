@@ -219,7 +219,7 @@ a {
 /*/////////*/ 
 #content {
     position: relative;
-    width: 80%;
+    max-width: 1400px;
     min-width: 1024px;
     margin: auto;
     box-shadow: 1px 0 15px -4px #dddddd, -1px 0 15px -4px #dddddd; 
@@ -355,6 +355,7 @@ a {
 }
 
 .link_box {
+    position: relative;
     overflow: hidden;
     height: 145px;
     margin: 17px 0 7px 0;
@@ -363,9 +364,29 @@ a {
     transition: 500ms;
 }
 
+.link_box div {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-85%, -50%);
+    z-index: 10000;
+    white-space: nowrap;
+}
+
+.link_box h5 {
+    color: white;
+    font-size: 2vw;
+    transition: 0.5s;
+}
+
 .link_box:hover {
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     transition: .5s;
+}
+
+.link_box:hover h5 {
+    opacity: 0.5;
+    font-size: 700%;
 }
 
 .link_box img {
