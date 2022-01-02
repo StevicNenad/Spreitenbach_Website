@@ -177,16 +177,16 @@ a {
 #header {
     overflow: hidden;
     position: relative;
-    height: 80vh;
+    height: 60vh;
     z-index: 1000;
 }
 
 #title{
     z-index: 10000;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
 }
 
 #title p {
@@ -204,7 +204,7 @@ a {
 /*//////////////////*/
 .mySlides {
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     filter: opacity(40%);
     object-fit: cover;
     display: none;
@@ -230,7 +230,7 @@ a {
 }
 
 #intro p {
-    margin: 0 100px 75px 100px;
+    margin: 0 10px 75px 10px;
 }
 
 #border_hack {
@@ -245,11 +245,11 @@ a {
 }
 
 #border_div.js_scroll3.scrolled{
-    width: 50%;
+    width: 80%;
 }
 
 .border_div_whitespace {
-    width: 25%;
+    width: 10%;
 }
 
 #border_div {
@@ -274,23 +274,25 @@ a {
 /*/////////////////////////*/
 #news_quicklinks_div {
     position: relative;
-    padding: 55px 0 0 0;
-    display: flex;
-    padding: 0 0 30px 0;
+    padding: 55px 0 50px 0;
 }
 #news {
-    padding: 0 0 0 50px;
+    text-align: center;
+    padding: 0 50px 0 50px;
     float: left;
-    width: 65%;
-    padding-right: 5%;
     overflow: hidden;
+}
+
+#news h3 {
+    font-size: 200%;
+    padding: 100px 0 50px 0;
 }
 
 .news_box {
     text-align: justify;
-    height: 125px;
+    height: 165px;
     overflow: hidden;
-    padding: 15px 0 15px 0;
+    padding: 35px 0 15px 0;
     border: #dddddd;
     border-width: 0 0 1px 0;
     border-style: solid;
@@ -298,6 +300,7 @@ a {
 }
 
 .news_box h4{
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -338,43 +341,45 @@ a {
  /* QUICKLINKS */
 /*////////////*/
 #quicklinks {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
     overflow: hidden;
-    width: 30%;
-    float: left;
+    width: 90%;
     background-color: white;
-    text-align: right;
+    margin: 100px 0 0 0;
+    padding: 0 5% 0 5%;
 }
 
 #quicklinks h3 {
-    padding: 40px 50px 0 0;
+    font-size: 200%;
+    margin: 100px 0 75px 0;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .link_box {
+    width: 45%;
     object-fit: cover;
     overflow: hidden;
-    height: 150px;
-    margin: 7px 0 7px 0;
-    background: black;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 10% 100%);
+    height: 160px;
+    clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
     transition: 500ms;
 }
 
-.link_box:hover {
-    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-    transition: .5s;
-}
-
 .link_box img {
-    transform: translateY(-20px);
-    filter: grayscale(100%) brightness(1.3);
-    opacity: 0.75;
+    height: auto;
+    filter: brightness(0.6);
+    opacity: 1;
     transition: 500ms;
 }
 
 .link_box:hover img {
     opacity: 1;
     filter: brightness(1.2) saturate(1.3);
-    transform: scale(1.1) translateY(-10px);
+    transform: scale(1.1);
     transition: 500ms;
 }
 
@@ -394,17 +399,19 @@ a {
 
 #video_embed {
     position: relative;
+    margin: 100px 0 0 0;
 }
 
 #vid {
     transform-origin: top;
-    position:static;
-    filter: brightness(0.6);
+    position: static;
+    filter: brightness(1.0);
     box-shadow: 0px 50px 40px -40px;
     z-index: 10000;
 }
 
 #mute {
+    display: none;
     opacity: 0.8;
     background-color: inherit;
     border: none;
@@ -415,23 +422,29 @@ a {
     z-index: 10000;
 }
 
+#mute img {
+    display: none;
+}
+
  /* FOOTER */
 /**********/
 
 #page_footer {
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    margin: -50px 0 -50px 0;
+    margin: -10px 0 -50px 0;
     padding: 70px 0 0 0;
-    height: 180px;
+    height: 350px;
     background-color: #222222;
     text-align: center;
+    z-index: 1;
 }
 
 #footer_logo {
     position: absolute;
-    float: left;
-    margin: -20px 0 0 15%;
+    top: 65%;
+    left: 27%;
+    transform: translate(-27%, -70%);
 }
 
 #nav_links {
@@ -442,7 +455,7 @@ a {
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 25%;
+    width: 65%;
 }
 
 #nav_links a{
@@ -456,24 +469,24 @@ a {
 #rights {
     position: absolute;
     color: white;
+    top: 95%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -95%);
     font-size: 10px;
-    margin: 100px 0 20px 0;
 }
 
 #spreitenbach_footer {
 
     color: white;
     position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translate(-90%, -50%);
+    top: 65%;
+    left: 70%;
+    transform: translate(-70%, -70%);
 
 }
 
 #spreitenbach_footer h4 {
-    font-size: 2vw;
+    font-size: 200%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');

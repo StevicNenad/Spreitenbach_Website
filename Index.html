@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/style_tablet.css">
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/style_phone.css">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px) and (max-width: 1023px)" href="css/style_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 699px)" href="css/style_phone.css">
     <meta name="description" content="Auf dieser Seite wird die Gemiende Spreitenbach präsentiert">
     <title>Spreitenbach</title>
 </head>
@@ -16,7 +16,7 @@
         <section id="page_header">
             <div id="navbar">
                 <div id="pic_div">
-                    <a href="Index.html">
+                    <a href="index.html">
                         <img id="lion_red" src="images/icons/Logo_red.png" height="96px" width="68px">
                         <img id="lion_black" src="images/icons/Logo.png" height="96px" width="68px">
                     </a>
@@ -165,31 +165,31 @@
 
                         <div class="link_box js_scroll2">
                             <a href="https://www.shoppitivoli.ch/">
-                                <img src="images/impressionen/shoppi_aussen_sued.jpg" width="400px">
+                                <img src="images/impressionen/shoppi_aussen_sued.jpg" width="100%" height="150">
                             </a>
                         </div>
 
                         <div class="link_box js_scroll2">
                             <a href="https://www.umweltarena.ch/">
-                                <img src="images/impressionen/umweltarena_eingang.jpg" width="400px">
+                                <img src="images/impressionen/umweltarena_eingang.jpg" width="100%" height="150">
                             </a>
                         </div>
 
                         <div class="link_box js_scroll2">
                             <a href="https://kart.ch/spreitenbach/">
-                                <img src="images/impressionen/kartbahn_aussen.jpg" width="400px">
+                                <img src="images/impressionen/kartbahn_aussen.jpg" width="100%" height="150">
                             </a>
                         </div>
 
                         <div class="link_box js_scroll2">
                             <a href="https://www.pathe.ch/de/kinos/cinema-pathe-spreitenbach">
-                                <img src="images/impressionen/pathe_kino_eingang.jpg" width="400px">
+                                <img src="images/impressionen/pathe_kino_eingang.jpg" width="100%" height="150">
                             </a>
                         </div>
 
                         <div class="link_box js_scroll2">
                             <a href="https://fcspreitenbach.ch/">
-                                <img src="images/impressionen/fc_spreitenbach_match_quicklinks.jpg" width="400px">
+                                <img src="images/impressionen/fc_spreitenbach_match_quicklinks.jpg" width="100%" height="150">
                             </a>
                         </div>
                     </div>
@@ -198,15 +198,15 @@
         </div>
 
         <div id="video_embed">
-            <button id="mute" onclick="unmuteVideo()">
+            <button id="mute">
                 <img src="images/icons/mute.png" height="256px" width="256px">
             </button>
-            <video id="vid" onclick="unmuteVideo()" muted src="video/Spreiti_final_2160p.mp4" type="video/mp4" width="100%" height="100%">
+            <video id="vid" src="video/Spreiti_final_2160p.mp4" type="video/mp4" width="100%" height="100%">
         </div>
 
         <section id="page_footer">
             <div id="footer_logo">
-                <img src="images/icons/logo_white.png" height="128px" width="90px">
+                <img src="images/icons/Logo_white.png" height="128px" width="90px">
             </div>
             <div id="nav_links">
                 <a href="gallery.html">Gallerie</a>
@@ -225,5 +225,5 @@
         </section>
     </main>
 </body>
-<script src="javascript/script.js"></script> 
+<script type="module" src="javascript/script.js"></script> 
 </html>
