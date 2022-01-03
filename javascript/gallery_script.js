@@ -3,7 +3,10 @@ import * as functions from './functions.js';
 functions.slideShow();
 functions.filterElements("all");
 functions.navbarScroll();
+functions.animateScroll();
 
+
+//Gets all anchors on page and adds a new function on click. Prevents href from opening a new window.
 const imagesHQ = document.getElementsByClassName("gallery_images");
 
 for(let image of imagesHQ) {
@@ -13,11 +16,12 @@ for(let image of imagesHQ) {
     })
 }
 
+//Adds a click function on Modal that closes the Image preview when you click to the side of it
 var modal = document.getElementById("modal_inside_container");
 
 modal.addEventListener("click", functions.closeHQ);
 
-
+//Adds functions to every button in the gallery
 var btn_all = document.getElementById("btn_all"),
     btn_shop = document.getElementById("btn_shop"),
     btn_leisure = document.getElementById("btn_leisure"),
