@@ -83,6 +83,10 @@ a {
     transition: all 0.3s ease;
 }
 
+#title_mobile {
+    display: none;
+}
+
 #nav_title_div a:hover {
     color: #b12b28;
     transition: all 0.3s ease;

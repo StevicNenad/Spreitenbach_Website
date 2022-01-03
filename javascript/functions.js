@@ -162,12 +162,75 @@ export function unmuteVideo() {
 }
 
 
-
+var image = document.getElementById("HQimage"),
+    modal = document.getElementById("HQimage_container"),
+    image_container = document.getElementById("modal_inside_container");
 
 export function openHQ(clicked_id) {
-  var image = document.getElementById("show_image"),
-      modal = document.getElementById("full_image");
+    image.src = clicked_id;
+    modal.style.display = "block";
+    image_container.classList.add("clicked")
+}
+
+export function closeHQ() {
+    image.src = "";
+    image_container.classList.remove("clicked")
+    modal.style.display = "none";
+}
+
+
+
+
+var images = document.getElementsByClassName("gallery_div");
+var gallery = document.getElementById("gallery_content");
+
+
+export function filterElements(filter) {
+  var criteria = filter;
   
-  image.src = clicked_id;
-  modal.style.display = "block";
+  if(filter == "all"){
+    criteria = "gallery_div";
+  }
+
+  activeButton(filter);
+
+  gallery.classList.remove("animate");
+
+  for(let image of images) {
+    if(image.classList.contains(criteria)) {
+      image.classList.add("show");
+    }
+    else {
+      image.classList.remove("show");
+    }
+  }
+
+  void gallery.offsetWidth;
+
+  gallery.classList.add("animate");
+}
+
+export function activeButton(btn){
+  removeAllStatusPressed();
+  switch(btn){
+    case "all":
+      document.getElementById("btn_all").classList.add("pressed");
+      break;
+    case "shop":
+      document.getElementById("btn_shop").classList.add("pressed");
+      break;
+    case "leisure":
+      document.getElementById("btn_leisure").classList.add("pressed");
+      break;
+    case "other":
+      document.getElementById("btn_other").classList.add("pressed");
+      break;
+  }
+}
+
+function removeAllStatusPressed() {
+  document.getElementById("btn_all").classList.remove("pressed");
+  document.getElementById("btn_shop").classList.remove("pressed");
+  document.getElementById("btn_leisure").classList.remove("pressed");
+  document.getElementById("btn_other").classList.remove("pressed");
 }

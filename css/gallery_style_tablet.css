@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 6.5vw;
+    font-size: 9vw;
     color: #222222;
 }
 
@@ -140,6 +140,7 @@ a.disabled {
 }
 
 #dropdown_content {
+    transform: translateX(-20%);
     display: none;
     position: absolute;
     background-color: white;
@@ -259,7 +260,7 @@ a.disabled {
 
 .gallery_div{
     visibility: collapse;    
-    height: 35vh;
+    height: 20vh;
     overflow: hidden;
     flex: 1 1 auto;
 }
