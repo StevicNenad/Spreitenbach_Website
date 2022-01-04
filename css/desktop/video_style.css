@@ -7,8 +7,17 @@ body {
 }
 
 h1 {
-    font-size: 12vw;
+    font-size: 6.5vw;
     color: #222222;
+}
+
+h2 {
+    font-size: 230%;
+}
+
+h3 {
+    font-size: 150%;
+    padding: 40px 0 0 0;
 }
 
 a {
@@ -16,15 +25,18 @@ a {
     text-decoration: none;
 }
 
+a.disabled {
+    cursor: zoom-in;
+}
+
 /* HEADER */
 /*////////*/
 #header {
     overflow: hidden;
     position: relative;
-    height: 33vh;
+    height: 40vh;
     z-index: 1000;
     transition: 0.5s;
-    box-shadow: 0 5px 20px -20px;
 }
 
 #title{
@@ -54,25 +66,26 @@ a {
     animation: slideshow 3s;
 }
 
- /* IMPRESSUM MAIN SECTION */
+ /* VIDEO MAIN SECTION */
 /*////////////////////////*/
 
-#impressum_content {
-    height: 50vh;
+#video_content {
+    width: 100%;
+    height: 100vh;
 }
 
-#contact_information {
-    margin: 25% 0 0 10%;
+#video_embed {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
 }
 
-.address {
-    font-size: 14px;
+#vid {
+    display: block;
+    margin: auto;
 }
 
-#mailto {
-    font-weight: 600;
-    text-decoration: underline;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700');
@@ -80,4 +93,35 @@ a {
 @keyframes slideshow {
     from {transform: scale(1.2); opacity: 0;}
     to {transform: scale(1); opacity: 0.4;}
+}
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

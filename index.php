@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="includes/css/header/header_style.css">
+    <link rel="stylesheet" href="includes/css/footer/footer_style.css">
+
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/desktop/style.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/style_phone.css">
@@ -13,40 +17,7 @@
 <body>
     <main>
 
-        <section id="page_header">
-            <div id="navbar">
-                <div id="pic_div">
-                    <a href="index.html">
-                        <img id="lion_red" src="images/icons/Logo_red.png" height="96px" width="68px">
-                        <img id="lion_black" src="images/icons/Logo.png" height="96px" width="68px">
-                    </a>
-                </div>
-                <div id="nav_title_div">
-                    <a class="title_desktop" href="index.html">Home</a>
-                    <a class="title_desktop" href="gallery.html">Gallerie</a>
-                    <a class="title_desktop" href="impressum.html">Impressum</a>
-                    <a id="title_mobile" href="index.html">SPREITENBACH</a>
-                </div>
-                <div id="dp_menu_div">
-                    <div id="dropdown">
-                        <button id="dropdown_btn">
-                            <div id="menu_writing_div">
-                                <label id="menu_writing">MENU</label>
-                            </div>
-                            <div id="burger_div">
-                                <img id="burger_red" src="images/icons/hamburger_red.png" height="35px" width="35px">
-                                <img id="burger_black" src="images/icons/hamburger_black.png" height="35px" width="35px">
-                            </div>
-                        </button>
-                        <div id="dropdown_content">
-                            <a href="index.html">Start</a>
-                            <a href="gallery.html">Gallerie</a>
-                            <a href="impressum.html">Impressum</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <?php require "includes/header.php"; ?>
 
         <div id="header">
             <div id="title">
@@ -210,28 +181,10 @@
                 <img src="images/icons/mute.png" height="256px" width="256px">
             </button>
             <video id="vid" src="video/Spreiti_final_2160p.mp4" type="video/mp4" width="100%" height="100%">
-        </div>
+        </div> 
 
-        <section id="page_footer">
-            <div id="footer_logo">
-                <img src="images/icons/Logo_white.png" height="128px" width="90px">
-            </div>
-            <div id="nav_links">
-                <a href="gallery.html">Gallerie</a>
-                <a href="index.html">Home</a>
-                <a href="impressum.html">Impressum</a>
-            </div>
-            <div id="rights">
-                <p>
-                        Nenad Stevic IT2b, Bénédict-Schule Zürich -
-                        <strong>Alle Rechte vorbehalten, 2022.</strong> 
-                </p>
-            </div>
-            <div id="spreitenbach_footer">
-                <h4>Spreitenbach<label class="red_dot">.</label></h4>
-            </div>
-        </section>
-        
+        <?php require 'includes/footer.php'; ?>
+
     </main>
 </body>
 <script type="module" src="javascript/script.js"></script> 
