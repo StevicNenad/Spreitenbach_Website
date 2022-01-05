@@ -72,6 +72,8 @@ a.disabled {
 #video_content {
     width: 100%;
     height: 100vh;
+    max-width: 2000px;
+    margin: auto;
 }
 
 #video_embed {
