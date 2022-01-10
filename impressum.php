@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="images/icons/Logo_red.ico">
+
     <link rel="stylesheet" href="includes/css/header/header_style.css">
     <link rel="stylesheet" href="includes/css/footer/footer_style.css">
 
