@@ -67,11 +67,14 @@ a {
 /*////////////////////////*/
 
 #impressum_content {
-    height: 45vh;
+    display: flex;
+    height: 55vh;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #contact_information {
-    margin: 8% 0 0 20%;
+    white-space: nowrap;
 }
 
 .address {
@@ -81,6 +84,11 @@ a {
 #mailto {
     font-weight: 600;
     text-decoration: underline;
+}
+
+#google_maps{
+    height: 35vh;
+    width: 35vw;
 }
 
 

@@ -13,7 +13,8 @@
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/desktop/style.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/style_phone.css">
-    <meta name="description" content="Auf dieser Seite wird die Gemiende Spreitenbach präsentiert">
+    <meta name="description" content="Auf dieser Seite wird die Gemiende Spreitenbach präsentiert, mit aktuellen news und interessanten Freizeitaktivitäten">
+    <meta name="keywords" content="News, Freizeit, Spreitenbach.">
     <title>Spreitenbach</title>
 </head>
 <body>

@@ -13,7 +13,8 @@
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/desktop/video_style.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/video_style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/video_style_phone.css">
-    <meta name="description" content="Spreitenbach Impressum">
+    <meta name="description" content="Spreitenbach Video Page">
+    <meta name="keywords" content="Video, Film, Präsentation">
     <title>Spreitenbach - Impressum</title>
 </head>
 <body>

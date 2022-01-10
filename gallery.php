@@ -14,6 +14,7 @@
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/gallery_style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/gallery_style_phone.css">
     <meta name="description" content="Spreitenbach Bildergallerie">
+    <meta name="keywords" content="Bilder, Gallerie, Impressionen">
     <title>Spreitenbach - Gallerie</title>
 </head>
 <body>

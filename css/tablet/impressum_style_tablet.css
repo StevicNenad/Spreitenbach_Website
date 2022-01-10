@@ -58,20 +58,32 @@ a {
 /*////////////////////////*/
 
 #impressum_content {
-    height: 50vh;
+    height: 80vh;
 }
 
 #contact_information {
-    margin: 25% 0 0 10%;
+    margin: 15% 0 0 20%;
+    white-space: nowrap;
 }
 
 .address {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 #mailto {
     font-weight: 600;
     text-decoration: underline;
+}
+
+#google_maps_container {
+    height: 50%;
+    width: 100%;
+}
+
+#google_maps{
+    margin: 10% 0 0 0;
+    height: 100%;
+    width: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
