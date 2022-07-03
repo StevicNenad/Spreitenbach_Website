@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+session_start();
+require "includes/check_login.php";
+?>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,13 +14,14 @@
 
     <link rel="stylesheet" href="includes/css/header/header_style.css">
     <link rel="stylesheet" href="includes/css/footer/footer_style.css">
+    <link rel="stylesheet" href="includes/css/cookie_banner/banner_style.css">
 
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/desktop/impressum_style.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/impressum_style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/impressum_style_phone.css">
-    <meta name="description" content="Spreitenbach Impressum">
-    <meta name="keywords" content="Impressum">
-    <title>Spreitenbach - Impressum</title>
+    <meta name="description" content="Spreitenbach Impressum mit Kontaktdaten der Benedict Schule Zürich">
+    <meta name="keywords" content="Impressum, Adresse, Kontakt">
+    <title>Spreitenbach - Impressum, by Nenad Stevic</title>
 </head>
 
 <body>

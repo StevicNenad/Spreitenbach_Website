@@ -1,3 +1,7 @@
+<?php
+session_start();
+require "includes/check_login.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +13,14 @@
 
     <link rel="stylesheet" href="includes/css/header/header_style.css">
     <link rel="stylesheet" href="includes/css/footer/footer_style.css">
+    <link rel="stylesheet" href="includes/css/cookie_banner/banner_style.css">
 
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/desktop/gallery_style.css">
     <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1023px)" href="css/tablet/gallery_style_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 599px)" href="css/phone/gallery_style_phone.css">
-    <meta name="description" content="Spreitenbach Bildergallerie">
-    <meta name="keywords" content="Bilder, Gallerie, Impressionen">
-    <title>Spreitenbach - Gallerie</title>
+    <meta name="description" content="Spreitenbach Bildergalerie mit verschiedenen Impressionen, in einer schönen Ansicht">
+    <meta name="keywords" content="Bilder, Galerie, Impressionen">
+    <title>Spreitenbach - Galerie, by Nenad Stevic</title>
 </head>
 <body>
     <main>
@@ -24,7 +29,7 @@
         
         <div id="header">
             <div id="title">
-                <h1>Bildergallerie</h1>
+                <h1>Bildergalerie</h1>
             </div>
             <div id="slideshow">
                 <img class="mySlides anim" src="images/bg_slideshow/pathe_kino_logo.jpg">

@@ -4,9 +4,10 @@
             </div>
             <div id="nav_links">
                 <a href="index.php">Home</a>
-                <a href="gallery.php">Gallerie</a>
+                <a href="gallery.php">Galerie</a>
                 <a href="video.php">Video</a>
                 <a href="impressum.php">Impressum</a>
+                <a href="privacy.php">Datenschutz</a>
             </div>
             <div id="rights">
                 <p>
@@ -17,4 +18,4 @@
             <div id="spreitenbach_footer">
                 <h4>Spreitenbach<label class="red_dot">.</label></h4>
             </div>
-        </section>
+      
