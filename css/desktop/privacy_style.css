@@ -62,7 +62,7 @@ a.disabled {
   animation: slideshow 3s;
 }
 
-/* VIDEO MAIN SECTION */
+/* PRIVACY MAIN SECTION */
 /*////////////////////////*/
 
 #privacy_content {
@@ -70,11 +70,6 @@ a.disabled {
   max-width: 2000px;
   margin: auto;
   padding: 20px 0 50px 0;
-}
-
-#vid {
-  display: block;
-  margin: auto;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");

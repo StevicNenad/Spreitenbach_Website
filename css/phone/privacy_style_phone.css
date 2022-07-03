@@ -210,25 +210,14 @@ a {
   animation: slideshow 3s;
 }
 
-/* VIDEO MAIN SECTION */
+/* PRIVACY MAIN SECTION */
 /*////////////////////////*/
 
-#video_content {
-  width: 100%;
-  height: 40vh;
-}
-
-#video_embed {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-#vid {
-  width: 100%;
-  display: block;
+#privacy_content {
+  width: 80%;
+  max-width: 2000px;
   margin: auto;
+  padding: 20px 0 50px 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");

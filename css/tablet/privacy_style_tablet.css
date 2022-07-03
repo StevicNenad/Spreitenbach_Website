@@ -11,6 +11,11 @@ h1 {
   color: #222222;
 }
 
+h2 {
+  font-size: 200%;
+  padding: 40px 0 0 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -205,31 +210,14 @@ a {
   animation: slideshow 3s;
 }
 
-/* VIDEO MAIN SECTION */
+/* PRIVACY MAIN SECTION */
 /*////////////////////////*/
 
-#video_content {
-  width: 100%;
-  height: 50vh;
-}
-
-#video_embed {
-  margin: 5px 0 0 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-#vid {
-  width: 100%;
-  display: block;
+#privacy_content {
+  width: 90%;
+  max-width: 2000px;
   margin: auto;
-}
-
-#mailto {
-  font-weight: 600;
-  text-decoration: underline;
+  padding: 20px 0 50px 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
