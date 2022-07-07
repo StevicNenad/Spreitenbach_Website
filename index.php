@@ -1,32 +1,14 @@
 <?php
 session_start();
-if (!isset($_SESSION["tries"])) {
-    $_SESSION["tries"] = 0;
-}
-
-if (isset($_COOKIE["cooldown"])) {
-    echo $_COOKIE["cooldown"];
-    exit();
-}
 
 if (isset($_POST["submit"])) {
-    if (isset($_COOKIE["registered"])) {
-        if (strcmp($_COOKIE["username"], $_POST["username"]) === 0 && strcmp($_COOKIE["password"], $_POST["password"]) === 0) {
-            setcookie("loggedIn", "1", time() + (60*60));
-            $_SESSION["displayName"] = $_COOKIE["firstname"] . " " . $_COOKIE["lastname"];
+            $displayName = $_POST["firstname"] . " " . $_POST["lastname"];
+            setcookie("loggedIn", $displayName, time() + (60 * 60));
+            $_SESSION["displayName"] = $displayName;
             $_SESSION["loggedIn"] = 1;
             header("Location: home.php");
             die();
         }
-    } else {
-        $_SESSION["tries"] = $_SESSION["tries"] + 1;
-        if ($_SESSION["tries"] >= 3) {
-            setcookie("cooldown", "Zu viele Loginversuche. Versuchen Sie es in 5 Minuten nochmal.", time() + (60 * 5));
-            session_destroy();
-            header("Refresh:0");
-        }
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,46 +34,45 @@ if (isset($_POST["submit"])) {
 
 <body>
     <main>
-        <div id="login_form_div">
-        <h1>Login</h1>
-            <?php if ($_SESSION["tries"] < 3) : ?>
-                <?php if($_SESSION["tries"] > 0): ?>
-                    <div>Falsche Angaben. Noch <?= 3 - $_SESSION["tries"]?>Versuche übrig.</div>
-                <?php endif; ?>
-                <form method="POST">
-                    <table id="form_table">
-                        <tr>
-                            <td>
-                                <label for="username">Benutzername: </label>
-                            </td>
-                            <td>
-                                <input type="text" name="username" id="username">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="username">Passwort: </label>
-                            </td>
-                            <td>
-                                <input type="password" name="password" id="password">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input id="submit_button" type="submit" name="submit" value="Anmelden">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-                <div id="register_link">
-                    <a href="register.php">Registrieren</a>
-                </div>
-            <?php elseif ($_SESSION["tries"] == 3) : ?>
-                <div><?= $_COOKIE["cooldown"] ?></div>
-            <?php endif; ?>
+        <div id="header">
+            <div id="login_form_div">
+                <h1>Login</h1>
+                    <form method="POST">
+                        <table id="form_table">
+                            <tr>
+                                <td>
+                                    <label for="firstname">Vorname: </label>
+                                </td>
+                                <td>
+                                    <input type="text" name="firstname" id="firstname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lastname">Nachname: </label>
+                                </td>
+                                <td>
+                                    <input type="text" name="lastname" id="lastname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input id="submit_button" type="submit" name="submit" value="Anmelden">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+            </div>
+            <div id="slideshow">
+                <img class="mySlides anim" src="images/bg_slideshow/umweltarena_promomaterial_aussenaussicht.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/pathe_kino_logo.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/shoppi_innen_mall.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/spreitenbach-luftbild-gewerbegebiet.jpg">
+                <img class="mySlides anim" src="images/bg_slideshow/ikea.jpg">
+            </div>
         </div>
     </main>
 </body>
-<script type="module" src="javascript/script.js"></script>
+<script type="module" src="javascript/loginRegister_script.js"></script>
 
 </html>

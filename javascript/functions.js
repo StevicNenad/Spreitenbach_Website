@@ -220,7 +220,7 @@ function removeAllStatusPressed() {
 export function cookiesAccepted() {
   const d = new Date();
   const banner = document.getElementById("cookie_banner");
-  d.setTime(d.getTime() + 5 * 365 * 24 * 60 * 60 * 1000);
+  d.setTime(d.getTime() + 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
   document.cookie = "cookies=accepted; expires=" + expires + ";path=/";
 
